@@ -1,0 +1,25 @@
+
+public class Printer {
+
+    public static void main(String[] args) {
+        // You can test the method here
+        int[] array = {5, 1, 3, 4, 2};
+        printArrayInStars(array);
+    }
+//Think about the process in plain English:
+//For every integer in the array,
+//Print a star
+//Repeat until number of stars == current integer
+//Repeat loop
+
+    public static void printArrayInStars(int[] array) {
+        // Write some code in here
+        for (int i : array) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+}
